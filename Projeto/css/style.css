@@ -1,0 +1,925 @@
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+   ========================================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding-top: 76px;
+
+    background-color: #211716;
+    color: #e8dcc9;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.navbar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1030;
+
+    background-color: #211716;
+
+    padding: 8px 0;
+
+    border-bottom: 1px solid #6e4b32;
+
+    box-shadow:
+        0 4px 18px rgba(0, 0, 0, 0.55);
+}
+
+
+/* LOGO */
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar-brand img {
+    width: 155px;
+    height: auto;
+
+    display: block;
+
+    /* Contorno dourado da logo */
+    filter:
+        drop-shadow(1px 0 0 #c49a4a)
+        drop-shadow(-1px 0 0 #c49a4a)
+        drop-shadow(0 1px 0 #c49a4a)
+        drop-shadow(0 -1px 0 #c49a4a);
+
+    transition: 0.3s ease;
+}
+
+
+.navbar-brand:hover img {
+    transform: scale(1.03);
+
+    filter:
+        drop-shadow(1px 0 0 #e0bd72)
+        drop-shadow(-1px 0 0 #e0bd72)
+        drop-shadow(0 1px 0 #e0bd72)
+        drop-shadow(0 -1px 0 #e0bd72)
+        drop-shadow(0 0 8px rgba(196, 154, 74, 0.45));
+}
+
+
+/* =========================================================
+   LINKS DA NAVBAR
+   ========================================================= */
+
+.navbar .nav-link {
+    color: #e0c98d;
+
+    font-size: 0.95rem;
+
+    font-weight: 600;
+
+    margin-left: 5px;
+
+    padding: 12px 15px !important;
+
+    border-radius: 3px;
+
+    border-bottom: 2px solid transparent;
+
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* HOVER */
+
+.navbar .nav-link:hover {
+    color: #ffffff !important;
+
+    background-color: #6e1d22;
+
+    border-bottom-color: #c49a4a;
+}
+
+
+/* =========================================================
+   SEÇÃO ATUAL
+   ========================================================= */
+
+.navbar .navbar-nav .nav-link.active {
+    color: #ffffff !important;
+
+    background-color: #4a1518;
+
+    border-bottom: 2px solid #d9a84e;
+
+    box-shadow:
+        inset 0 -1px 0 rgba(224, 189, 114, 0.25),
+        0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================================
+   HERO / HEADER
+   ========================================================= */
+
+.hero {
+    min-height: 720px;
+
+    padding: 150px 0 100px;
+
+    display: flex;
+    align-items: center;
+
+    background-image:
+
+        linear-gradient(
+            90deg,
+            rgba(25, 14, 13, 0.98) 0%,
+            rgba(45, 19, 19, 0.88) 38%,
+            rgba(45, 19, 19, 0.35) 70%,
+            rgba(25, 14, 13, 0.25) 100%
+        ),
+
+        url("../img/Chrono-Trigger-Header.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    border-bottom: 1px solid #7b4a2d;
+
+    box-shadow:
+        inset 0 -50px 80px rgba(0, 0, 0, 0.55);
+}
+
+
+.hero-content {
+    max-width: 720px;
+}
+
+
+.hero-tags {
+    color: #d9a84e;
+
+    font-size: 0.8rem;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 18px;
+}
+
+
+.hero h1 {
+    color: #f4e8d0;
+
+    font-size: 5rem;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    margin-bottom: 20px;
+
+    text-shadow:
+        2px 4px 12px rgba(0, 0, 0, 0.8),
+        0 0 25px rgba(196, 154, 74, 0.15);
+}
+
+
+.hero h2 {
+    color: #d9a84e;
+
+    font-size: 2rem;
+
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+
+.hero-text {
+    color: #e0d4c1;
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+
+    max-width: 650px;
+
+    margin-bottom: 32px;
+}
+
+
+/* =========================================================
+   BOTÃO
+   ========================================================= */
+
+.btn-chrono {
+    display: inline-block;
+
+    background: linear-gradient(
+        90deg,
+        #7b181d,
+        #a83a32
+    );
+
+    color: #ffffff;
+
+    border: 1px solid #d0a253;
+
+    border-radius: 3px;
+
+    padding: 13px 28px;
+
+    font-size: 0.9rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.45),
+        inset 0 1px 0 rgba(255, 255, 255, 0.18);
+
+    transition: 0.3s ease;
+}
+
+
+.btn-chrono:hover {
+    color: #ffffff;
+
+    background: linear-gradient(
+        90deg,
+        #a83a32,
+        #7b181d
+    );
+
+    border-color: #e0bd72;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.55),
+        0 0 15px rgba(196, 154, 74, 0.18);
+}
+
+
+/* =========================================================
+   SEÇÕES
+   ========================================================= */
+
+.game-section,
+.highlights-section,
+.gallery-section {
+    padding: 100px 0;
+}
+
+
+/* =========================================================
+   TÍTULOS DAS SEÇÕES
+   ========================================================= */
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+
+.section-label {
+    color: #c49a4a;
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 8px;
+}
+
+
+.section-heading h2 {
+    color: #f2e8d5;
+
+    font-size: 2.4rem;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+
+    text-shadow:
+        1px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.section-line {
+    width: 70px;
+
+    height: 3px;
+
+    margin: 0 auto;
+
+    background-color: #c49a4a;
+
+    box-shadow:
+        0 0 8px rgba(196, 154, 74, 0.4);
+}
+
+
+/* =========================================================
+   SOBRE O JOGO
+   ========================================================= */
+
+.game-section {
+    background:
+        linear-gradient(
+            180deg,
+            #35201c 0%,
+            #211716 100%
+        );
+
+    border-bottom: 1px solid #6e4b32;
+}
+
+
+/* =========================================================
+   CAIXA DE DESCRIÇÃO
+   ========================================================= */
+
+.description-box {
+    background-color: rgba(25, 14, 13, 0.72);
+
+    border: 1px solid #6e4b32;
+
+    border-left: 3px solid #a83a32;
+
+    border-radius: 3px;
+
+    padding: 30px 35px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+
+.description-box p {
+    color: #d8cabb;
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+.description-box p:last-child {
+    margin-bottom: 0;
+}
+
+
+.description-box strong {
+    color: #f2e8d5;
+}
+
+
+.description-box em {
+    color: #d9a84e;
+}
+
+
+/* =========================================================
+   CARDS DE INFORMAÇÃO
+   ========================================================= */
+
+.info-card {
+    background-color: #2b1b19;
+
+    border: 1px solid #6e4b32;
+
+    border-radius: 3px;
+
+    padding: 22px 18px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.3);
+
+    transition: 0.3s ease;
+}
+
+
+.info-card:hover {
+    border-color: #c49a4a;
+
+    background-color: #39221e;
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.info-label {
+    color: #a99680;
+
+    font-size: 0.7rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 10px;
+}
+
+
+.info-value {
+    color: #f2e8d5;
+
+    font-size: 0.95rem;
+
+    font-weight: 600;
+
+    line-height: 1.5;
+
+    margin: 0;
+}
+
+
+.classification {
+    width: 55px;
+
+    height: auto;
+
+    margin-top: 2px;
+}
+
+
+/* =========================================================
+   DESTAQUES
+   ========================================================= */
+
+.highlights-section {
+    background-color: #1a1110;
+
+    border-bottom: 1px solid #6e4b32;
+}
+
+
+.section-subtitle {
+    color: #a99680;
+
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+
+    max-width: 760px;
+
+    margin: 25px auto 0;
+}
+
+
+/* =========================================================
+   CARDS DOS DESTAQUES
+   ========================================================= */
+
+.chrono-card {
+    background:
+        linear-gradient(
+            145deg,
+            #38221e,
+            #251816
+        );
+
+    border: 1px solid #6e4b32;
+
+    border-radius: 3px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.35);
+
+    transition: 0.3s ease;
+}
+
+
+.chrono-card:hover {
+    border-color: #c49a4a;
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 14px 30px rgba(0, 0, 0, 0.5),
+        0 0 15px rgba(196, 154, 74, 0.08);
+}
+
+
+.chrono-card .card-body {
+    padding: 32px 28px;
+}
+
+
+.card-number {
+    display: block;
+
+    color: #c49a4a;
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+.chrono-card h3 {
+    color: #f2e8d5;
+
+    font-size: 1.35rem;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+
+.card-line {
+    width: 45px;
+
+    height: 2px;
+
+    background-color: #a83a32;
+
+    margin-bottom: 20px;
+}
+
+
+.chrono-card p {
+    color: #bcae9e;
+
+    font-size: 0.92rem;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   GALERIA
+   ========================================================= */
+
+.gallery-section {
+    background:
+        linear-gradient(
+            180deg,
+            #211716 0%,
+            #15100f 100%
+        );
+}
+
+
+.gallery-item {
+    overflow: hidden;
+
+    background-color: #2b1b19;
+
+    border: 1px solid #6e4b32;
+
+    border-radius: 3px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.4);
+
+    transition: 0.3s ease;
+}
+
+
+.gallery-item img {
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.5s ease;
+}
+
+
+.gallery-item:hover {
+    border-color: #c49a4a;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.55);
+}
+
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+
+footer {
+    background-color: #120d0c;
+
+    color: #ffffff;
+
+    padding: 45px 0;
+
+    border-top: 1px solid #6e4b32;
+}
+
+
+footer h4 {
+    color: #f2e8d5;
+
+    font-size: 1.4rem;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+
+footer p {
+    color: #948477;
+
+    font-size: 0.9rem;
+
+    margin-bottom: 7px;
+}
+
+
+footer .footer-year {
+    color: #c49a4a;
+}
+
+
+footer .footer-developed {
+    color: #cbbba8;
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    margin-top: 25px;
+}
+
+
+/* =========================================================
+   TABLETS
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    body {
+        padding-top: 125px;
+    }
+
+
+    .navbar-brand img {
+        width: 135px;
+    }
+
+
+    .navbar-menu {
+        width: 100%;
+
+        margin-top: 5px;
+
+        overflow-x: auto;
+    }
+
+
+    .navbar-nav {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+
+    .nav-link {
+        font-size: 0.85rem;
+
+        margin: 0 2px;
+    }
+
+
+    .hero {
+        min-height: 700px;
+
+        padding: 150px 20px 90px;
+
+        text-align: center;
+
+        background-position: center;
+    }
+
+
+    .hero-content {
+        margin: 0 auto;
+    }
+
+
+    .hero-text {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+
+    .hero h2 {
+        font-size: 1.7rem;
+    }
+
+
+    .game-section,
+    .highlights-section,
+    .gallery-section {
+        padding: 80px 0;
+    }
+}
+
+
+/* =========================================================
+   CELULARES
+   ========================================================= */
+
+@media (max-width: 576px) {
+
+    body {
+        padding-top: 118px;
+    }
+
+
+    .navbar {
+        padding: 8px 0;
+    }
+
+
+    .navbar .container {
+        flex-direction: column;
+    }
+
+
+    .navbar-brand img {
+        width: 110px;
+    }
+
+
+    .navbar-menu {
+        margin-top: 5px;
+    }
+
+
+    .nav-link {
+        font-size: 0.75rem;
+
+        padding: 7px 8px !important;
+    }
+
+
+    .hero {
+        min-height: 650px;
+
+        padding: 140px 15px 70px;
+
+        background-position: center;
+    }
+
+
+    .hero-tags {
+        font-size: 0.65rem;
+
+        letter-spacing: 1px;
+
+        line-height: 1.8;
+    }
+
+
+    .hero h1 {
+        font-size: 2.7rem;
+    }
+
+
+    .hero h2 {
+        font-size: 1.25rem;
+    }
+
+
+    .hero-text {
+        font-size: 0.95rem;
+
+        line-height: 1.7;
+    }
+
+
+    .game-section,
+    .highlights-section,
+    .gallery-section {
+        padding: 60px 0;
+    }
+
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 1.9rem;
+    }
+
+
+    .section-subtitle {
+        font-size: 0.9rem;
+    }
+
+
+    .description-box {
+        padding: 22px 20px;
+    }
+
+
+    .description-box p {
+        font-size: 0.92rem;
+
+        line-height: 1.7;
+    }
+
+
+    .info-card {
+        padding: 18px 12px;
+    }
+
+
+    .info-value {
+        font-size: 0.82rem;
+    }
+
+
+    .chrono-card .card-body {
+        padding: 27px 22px;
+    }
+
+
+    .chrono-card h3 {
+        font-size: 1.25rem;
+    }
+
+
+    .chrono-card p {
+        font-size: 0.88rem;
+    }
+
+
+    .gallery-item img {
+        height: 230px;
+    }
+
+
+    footer {
+        padding: 35px 15px;
+    }
+}
